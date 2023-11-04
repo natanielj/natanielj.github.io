@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import HeaderCard from "./Components/headerCard.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>My Resume</h1>
+      <HeaderCard />
     </div>
   );
 }
-
-export default App;
