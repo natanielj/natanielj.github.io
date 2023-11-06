@@ -6,40 +6,54 @@ import {
   Avatar,
 } from "@material-tailwind/react";
 
+import { PageSpeedDial } from "./SpeedDial.js";
+
 function HeaderCard() {
   return (
-    <Card
-      shadow={false}
-      className="relative grid h-[20rem] w-full max-w-[50rem] items-end justify-center overflow-hidden text-center"
-    >
-      <CardHeader
-        floated={false}
-        shadow={false}
-        color="transparent"
-        className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-      >
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-      </CardHeader>
-      <CardBody className="relative py-14 px-6 md:px-12">
-        <Typography
-          variant="h2"
-          color="white"
-          className="mb-6 font-medium leading-[1.5]"
-        >
-          How we design and code open-source projects?
+    <div className="mx-auto max-w-screen-md py-12">
+      <div className="mx-auto max-w-screen-md py-12">
+        <Card className="mb-12 overflow-hidden">
+          <img
+            alt="nature"
+            className="h-[32rem] w-full object-cover object-center"
+            src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
+          />
+        </Card>
+        <Typography variant="h2" color="blue-gray" className="mb-2">
+          About Me
         </Typography>
-        <Typography variant="h5" className="mb-4 text-gray-400">
-          Tania Andrew
+        <Typography variant="h5" color="blue-gray" className="mb-4">
+          Student at UCSC | Freelance Web Designer
         </Typography>
-        <Avatar
-          size="xl"
-          variant="circular"
-          alt="tania andrew"
-          className="border-2 border-white"
-          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-        />
-      </CardBody>
-    </Card>
+        <Typography color="gray" className="font-normal">
+          Hello there! I am Nataniel Jayaseelan, a dedicated student pursuing my
+          education at the esteemed University of California, Santa Cruz (UCSC),
+          where I am pursing Computer Engineering. Alongside my academic
+          journey, I am passionate about the digital world and the creative
+          possibilities it offers. I have a keen interest in web design and
+          development, and I have honed my skills as a freelance web designer. I
+          believe in the power of intuitive and visually appealing websites that
+          not only capture attention but also deliver seamless user experiences.
+          With a strong foundation in both design principles and coding
+          languages, I bring creative ideas to life in the digital sphere. My
+          time at UCSC has equipped me with a comprehensive understanding of
+          [mention any specific skills or knowledge you have gained through your
+          coursework]. Combining this academic knowledge with my practical
+          experience as a freelance web designer, I am proficient in creating
+          responsive and aesthetically pleasing websites tailored to meet the
+          unique needs of clients. I thrive on challenges and approach every
+          project with enthusiasm and dedication. My goal is to not only meet
+          but exceed the expectations of my clients, ensuring their online
+          presence is impactful and engaging. I am always exploring new
+          techniques and staying updated with the latest trends in the
+          ever-evolving world of web design. Thank you for visiting my website.
+          If you have a project in mind or simply want to connect, feel free to
+          reach out. I am always excited to collaborate and create exceptional
+          digital experiences. Let's transform ideas into visually stunning
+          realities!
+        </Typography>
+      </div>
+    </div>
   );
 }
 
