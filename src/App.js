@@ -1,6 +1,6 @@
 import React from "react";
-import MenuBar from "./Components/menubar";
+import { HomePage } from "./pages/home";
 
 export default function App() {
-  return <MenuBar />;
+  return <HomePage />;
 }
