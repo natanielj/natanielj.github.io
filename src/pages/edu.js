@@ -99,10 +99,13 @@ export function EducationSection() {
               color="gary"
               className="font-normal text-gray-600"
             >
-              The key to more success is to have a lot of pillows. Put it this
-              way, it took me twenty five years to get these plants, twenty five
-              years of blood sweat and tears, and I&apos;m never giving up,
-              I&apos;m just getting started. I&apos;m up to something. Fan luv.
+              <b>College Scholars Program, Crown College</b>
+              <br></br>
+              <b>Major:</b> Computer Engineering <br></br>
+              <b>GPA:</b> 3.0<br></br>
+              <b>Activities:</b> Slug Gaming Community - Production Manager,
+              SlugBotics - Marketing
+              <br></br>
             </Typography>
           </TimelineBody>
         </TimelineItem>

@@ -3,9 +3,11 @@ import { Breadcrumbs } from "@material-tailwind/react";
 export function MenuNav() {
   return (
     <Breadcrumbs separator="-">
-      <a href="">Docs</a>
-      <a href="">Components</a>
-      <a href="">Breadcrumbs</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="">Projects</a>
+      <a href="">Awards</a>
+      <a href="">Projects</a>
     </Breadcrumbs>
   );
 }

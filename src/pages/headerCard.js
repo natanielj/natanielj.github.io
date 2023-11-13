@@ -20,7 +20,7 @@ function HeaderCard() {
           About Me
         </Typography>
         <Typography variant="h5" color="blue-gray" className="mb-4">
-          Current Student at UCSC | Freelance Web Designer
+          Current Student at UCSC | Freelance Web Developer
         </Typography>
         <Typography color="gray" className="font-normal">
           I am a highly skilled and passionate professional dedicated to
