@@ -1,4 +1,4 @@
-import { Card, Typography } from "@material-tailwind/react";
+import { Typography, Carousel } from "@material-tailwind/react";
 import { MediaBar } from "../Components/mediaBar";
 
 //import { PageSpeedDial } from "../Components/SpeedDial.js";
@@ -6,15 +6,11 @@ import { MediaBar } from "../Components/mediaBar";
 
 function HeaderCard() {
   return (
-    <div className="mx-auto max-w-screen-md">
+    <div className="mx-auto max-w-screen-md ">
       <div className="mx-auto max-w-screen-md pt-5">
-        <Card className="overflow-hidden">
-          <img
-            alt="nature"
-            className="h-[32rem] w-full object-cover object-center"
-            src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-          />
-        </Card>
+        <Carousel>
+          <img src="https://media.licdn.com/dms/image/D5622AQHUQBLY6Raljw/feedshare-shrink_800/0/1686889902414?e=1703721600&v=beta&t=rNMFxgGqbcq5QhjYlgUK1pLQaq4ZtRZap2yzPVZaqwU" />
+        </Carousel>
         <MediaBar />
         <Typography variant="h2" color="blue-gray" className="mb-2">
           About Me

@@ -14,7 +14,7 @@ export function Footer() {
             color="blue-gray"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            About Us
+            About
           </Typography>
         </li>
         <li>
@@ -44,7 +44,7 @@ export function Footer() {
             color="blue-gray"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            Contact Us
+            Contact Me 
           </Typography>
         </li>
       </ul>

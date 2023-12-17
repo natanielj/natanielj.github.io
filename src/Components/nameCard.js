@@ -1,10 +1,23 @@
 import React from "react";
-import { Typography, Chip } from "@material-tailwind/react";
+import { Typography, Chip, Avatar } from "@material-tailwind/react";
+
 export default function NameCard() {
   return (
     <div className="mx-auto max-w-screen-md pt-5 pb-7">
-      <Typography variant="h1">Hi, I'm Nataniel! </Typography>
-      <Chips />
+      <div className="">
+        <Avatar
+          size="xl"
+          src="https://media.licdn.com/dms/image/D5603AQHWqLZ9G4rjZw/profile-displayphoto-shrink_100_100/0/1695765871186?e=1708560000&v=beta&t=zA1o0LMVqsbBaznG0aWfKTr2JXkaqS86PvEOBZ1Ujx8"
+          alt="avatar"
+          withBorder={true}
+          color="blue"
+          className="p-0.5"
+        />
+      </div>
+      <div>
+        <Typography variant="h1">Hi, I'm Nataniel! </Typography>
+        <Chips />
+      </div>
     </div>
   );
 }

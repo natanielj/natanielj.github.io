@@ -6,11 +6,19 @@ import {
   TimelineIcon,
   TimelineBody,
   Typography,
+  IconButton,
 } from "@material-tailwind/react";
 
 export function EducationSection() {
   return (
     <div className="mx-auto max-w-screen-md pt-5 pb-7">
+      <div class="fixed bottom-4 right-4">
+        <a>
+          <IconButton>
+            <i className="fas fa-heart" />
+          </IconButton>
+        </a>
+      </div>
       <Typography variant="h2" className="py-5">
         Education
       </Typography>
@@ -55,6 +63,69 @@ export function EducationSection() {
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
+            <Timeline>
+              <TimelineItem className="h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost"></TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray">
+                      $2400, Design changes
+                    </Typography>
+                    <Typography
+                      variant="small"
+                      color="gray"
+                      className="font-normal"
+                    >
+                      22 DEC 7:20 PM
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+              <TimelineItem className="h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon
+                    className="p-3"
+                    variant="ghost"
+                    color="red"
+                  ></TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray">
+                      Eastvale Innovators - Founder, President
+                    </Typography>
+                    <Typography
+                      variant="small"
+                      color="gray"
+                      className="font-normal"
+                    >
+                      Winter 2022 - Spring 2023
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+              <TimelineItem className="h-28">
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon
+                    className="p-3"
+                    variant="ghost"
+                    color="green"
+                  ></TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray">
+                      State Champion in Website Design
+                    </Typography>
+                    <Typography
+                      variant="small"
+                      color="gray"
+                      className="font-normal"
+                    >
+                      FBLA's State Leadership Conference - April 2023
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+            </Timeline>
             <Typography
               variant="small"
               color="gary"
@@ -64,11 +135,11 @@ export function EducationSection() {
               <b>Activities:</b> ERHS Theater Tech - Workshop Manager, ERHS -
               Drone Technician, ERHS FBLA - Community Service Director, ERHS
               Choir - Vice President of Baritone Choir, Co-Vice President of
-              ERHS Choir Club, Eastvale Innovators - Founder, President, First
-              Innovator, ERHS Rotary Interact - Associate, Virtual Medical
-              Missions (VMM) - Chief of Computer Science Operations, Rotary Club
-              of Greater Eastvale - Web Developer, CNUSD Parent Center - Math
-              Tutor, Kumon - Math Tutor, ERHS - JV Lacrosse Goalie<br></br>
+              ERHS Choir Club, , First Innovator, ERHS Rotary Interact -
+              Associate, Virtual Medical Missions (VMM) - Chief of Computer
+              Science Operations, Rotary Club of Greater Eastvale - Web
+              Developer, CNUSD Parent Center - Math Tutor, Kumon - Math Tutor,
+              ERHS - JV Lacrosse Goalie<br></br>
               <b>Awards:</b> Most Exemplary Student of Eleanor Roosevelt High
               School, Award of Recognition by California State Senate, Award of
               Recognition by County of Riverside, Special Congressional
@@ -76,10 +147,9 @@ export function EducationSection() {
               California Legislature Assembly, Recognition of Outstanding
               Achievement by Temescal Palms Lodge #314, Award of Recognition by
               the City of Eastvale, Award of Recognition by the CNUSD Board of
-              Education and staff, First Place/State Champion in Website Design
-              Competition at FBLA’s State Leadership Conference (SLC), Won
-              Second Place in Computer Applications at FBLA Inland Section
-              Leadership Conference
+              Education and staff, Competition at FBLA’s State Leadership
+              Conference (SLC), Won Second Place in Computer Applications at
+              FBLA Inland Section Leadership Conference
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -104,7 +174,7 @@ export function EducationSection() {
               <b>Major:</b> Computer Engineering <br></br>
               <b>GPA:</b> 3.0<br></br>
               <b>Activities:</b> Slug Gaming Community - Production Manager,
-              SlugBotics - Marketing
+              SlugBotics - Marketing, UCSC CITRIS - Drone Pilot Trainee
               <br></br>
             </Typography>
           </TimelineBody>
