@@ -59,6 +59,33 @@ export default function SkillsCard() {
           </div>
         </Card>
       </div>
+      <br></br>
+      <div>
+        <Card className="">
+          <div className="p-10 justify-between">
+            <Typography variant="h4" color="blue-gray" className="mb-2">
+              Visual Design
+            </Typography>
+            <Typography variant="body1" color="blue-gray">
+              Adobe Photoshop
+            </Typography>
+            <Progress color="lightBlue" value="90" className="mb-2" />
+            <Typography variant="body1" color="blue-gray">
+              UI/UX
+            </Typography>
+            <Progress color="lightBlue" value="80" className="mb-2" />
+            <Typography variant="body1" color="blue-gray">
+              Adobe Premiere Pro
+            </Typography>
+            <Progress color="lightBlue" value="70" className="mb-2" />
+            <Typography variant="body1" color="blue-gray">
+              Adobe Illustrator
+            </Typography>
+            <Progress color="lightBlue" value="50" className="mb-2" />
+          </div>
+        </Card>
+      </div>
+      <br></br>
     </div>
   );
 }
