@@ -9,9 +9,8 @@ export function MenuNav() {
         <a href="#skills">Skills</a>
         <a href="#awards">Awards</a>
         <a href="#experience">Experience</a>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
       </Breadcrumbs>
-      <div></div>
     </div>
   );
 }

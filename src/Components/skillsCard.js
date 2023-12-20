@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Typography, Progress, Carousel } from "@material-tailwind/react";
+import { Card, Typography, Progress } from "@material-tailwind/react";
 
 export default function SkillsCard() {
   return (
@@ -13,22 +13,10 @@ export default function SkillsCard() {
             <Typography variant="h4" color="blue-gray" className="mb-2">
               Web Development
             </Typography>
-            <Typography variant="body1" color="blue-gray">
-              HTML
-            </Typography>
-            <Progress color="lightBlue" value="90" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              CSS (Bootstrap, Tailwind)
-            </Typography>
-            <Progress color="lightBlue" value="80" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              React
-            </Typography>
-            <Progress color="lightBlue" value="70" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              Wordpress & CMS
-            </Typography>
-            <Progress color="lightBlue" value="50" className="mb-2" />
+            <Progressor title="HTML" value="90" />
+            <Progressor title="CSS (Bootstrap, Tailwind)" value="80" />
+            <Progressor title="React.js" value="70" />
+            <Progressor title="Wordpress & CMS" value="50" />
           </div>
         </Card>
         <Card className="">
@@ -36,26 +24,11 @@ export default function SkillsCard() {
             <Typography variant="h4" color="blue-gray" className="mb-2">
               Programming Languages
             </Typography>
-            <Typography variant="body1" color="blue-gray">
-              Javascript
-            </Typography>
-            <Progress color="lightBlue" value="90" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              C#
-            </Typography>
-            <Progress color="lightBlue" value="80" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              Python
-            </Typography>
-            <Progress color="lightBlue" value="70" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              Java
-            </Typography>
-            <Progress color="lightBlue" value="50" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              PHP
-            </Typography>
-            <Progress color="lightBlue" value="25" className="mb-2" />
+            <Progressor title="Javascript" value="90" />
+            <Progressor title="C#" value="80" />
+            <Progressor title="Python" value="70" />
+            <Progressor title="Java" value="50" />
+            <Progressor title="PHP" value="25" />
           </div>
         </Card>
       </div>
@@ -66,26 +39,26 @@ export default function SkillsCard() {
             <Typography variant="h4" color="blue-gray" className="mb-2">
               Visual Design
             </Typography>
-            <Typography variant="body1" color="blue-gray">
-              Adobe Photoshop
-            </Typography>
-            <Progress color="lightBlue" value="90" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              UI/UX
-            </Typography>
-            <Progress color="lightBlue" value="80" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              Adobe Premiere Pro
-            </Typography>
-            <Progress color="lightBlue" value="70" className="mb-2" />
-            <Typography variant="body1" color="blue-gray">
-              Adobe Illustrator
-            </Typography>
-            <Progress color="lightBlue" value="50" className="mb-2" />
+            <Progressor title="Adobe Photoshop" value="90" />
+            <Progressor title="UI/UX" value="80" />
+            <Progressor title="Adobe Premiere Pro" value="70" />
+            <Progressor title="Adobe Illustrator" value="50" />
           </div>
         </Card>
       </div>
       <br></br>
+    </div>
+  );
+}
+
+//for each skill, calls the title and progress bar
+function Progressor(props) {
+  return (
+    <div>
+      <Typography variant="body1" color="blue-gray">
+        {props.title}
+      </Typography>
+      <Progress color="lightBlue" value={props.value} className="mb-2" />
     </div>
   );
 }

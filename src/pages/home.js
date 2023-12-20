@@ -7,12 +7,14 @@ import NameCard from "../Components/nameCard";
 import SkillsCard from "../Components/skillsCard";
 import AwardsPage from "./awards";
 import Experience from "./exp";
+import DarkModeSwitch from "../Components/darkMode";
 
 export function HomePage() {
   return (
-    <div section="top" className="bg-inherit">
+    <div section="top" className="bg-white dark:bg-blue-gray-900">
       <div className="sticky mx-auto max-w-screen-md pt-5">
         <NameCard />
+        <DarkModeSwitch />
       </div>
 
       <div>
@@ -31,6 +33,7 @@ export function HomePage() {
         <section id="experience">
           <Experience />
         </section>
+        <section id="contact"></section>
       </div>
       <div className="items-center"></div>
       <Footer />

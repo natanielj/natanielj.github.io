@@ -6,32 +6,16 @@ import {
   TimelineIcon,
   TimelineBody,
   Typography,
-  IconButton,
 } from "@material-tailwind/react";
+import { PageSpeedDial } from "../Components/SpeedDial";
+
+// Could be more efficient by using a for loop, but I'm too lazy to do that
+// example of not using a function, just a component
 
 export function EducationSection() {
   return (
     <div className="mx-auto max-w-screen-md pt-5 pb-7">
-      <div class="fixed bottom-4 right-4">
-        <a href="#top">
-          <IconButton>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 15.75l7.5-7.5 7.5 7.5"
-              />
-            </svg>
-          </IconButton>
-        </a>
-      </div>
+      <PageSpeedDial />
       <Typography variant="h2" className="py-5">
         Education
       </Typography>

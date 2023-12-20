@@ -11,5 +11,4 @@ export default withMT({
     extend: {},
   },
   plugins: [require("flowbite/plugin")],
-  darkMode: "class",
 });
