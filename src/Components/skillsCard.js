@@ -3,10 +3,9 @@ import { Card, Typography, Progress } from "@material-tailwind/react";
 
 export default function SkillsCard() {
   return (
-    <div className="mx-auto max-w-screen-md mb-2">
-      <Typography variant="h2" color="blue-gray" className="mb-2">
-        Skills
-      </Typography>
+    <div className="mx-auto max-w-screen-md mb-2 dark:text-white">
+      <h2 className="text-4xl mb-2 dark:text-white">Skills</h2>
+
       <div className="col-span-4  grid grid-cols-2 gap-4 ">
         <Card className="">
           <div className="p-10 justify-between">

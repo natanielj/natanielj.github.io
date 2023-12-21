@@ -11,12 +11,11 @@ import DarkModeSwitch from "../Components/darkMode";
 
 export function HomePage() {
   return (
-    <div section="top" className="bg-white dark:bg-blue-gray-900">
+    <div section="top" className="bg-white dark:bg-midnight">
       <div className="sticky mx-auto max-w-screen-md pt-5">
         <NameCard />
-        <DarkModeSwitch />
       </div>
-
+      <DarkModeSwitch />
       <div>
         <section id="about">
           <HeaderCard />

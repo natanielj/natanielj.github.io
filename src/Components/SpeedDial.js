@@ -18,14 +18,14 @@ export function PageSpeedDial() {
     variant: "small",
     color: "blue-gray",
     className:
-      "absolute top-2/4 -left-2/4 -translate-y-2/4 -translate-x-3/4 font-normal",
+      "absolute top-2/4 -left-2/4 -translate-y-2/4 -translate-x-3/4 font-normal dark:text-white",
   };
 
   return (
     <div class="fixed bottom-4 right-4">
       <SpeedDial>
         <SpeedDialHandler>
-          <IconButton size="lg" className="rounded-full">
+          <IconButton size="lg" className="rounded-full dark:bg-blue-gray-500">
             <Bars3BottomLeftIcon className="h-5 w-5 transition-transform group-hover:rotate-180" />
           </IconButton>
         </SpeedDialHandler>

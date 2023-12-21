@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@material-tailwind/react";
 
 export function MenuNav() {
   return (
-    <div>
+    <div className="dark:text-white bg-white">
       <Breadcrumbs separator="|">
         <a href="#about">About</a>
         <a href="#education">Education</a>

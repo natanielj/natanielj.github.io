@@ -18,9 +18,9 @@ export default function NameCard() {
       </Tooltip>
 
       <div>
-        <Typography variant="h1" color="white">
+        <h1 className="font-sans text-5xl pt-3 dark:text-white">
           Hi, I'm Nataniel!
-        </Typography>
+        </h1>
         <Chips />
       </div>
     </div>
@@ -57,7 +57,7 @@ function MenuNav() {
 
       <MenuList>
         <a href="#about">
-          <MenuItem className="flex items-center gap-2">
+          <MenuItem className="flex items-center gap-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

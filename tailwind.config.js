@@ -9,6 +9,14 @@ export default withMT({
   darkMode: "class",
   theme: {
     extend: {},
+    colors: {
+      white: "#DFE7EE",
+      midnight: "#001F3D",
+      redAccent: "#753E44",
+    },
+    fontFamily: {
+      sans: ["Inter var", "sans-serif"],
+    },
   },
   plugins: [require("flowbite/plugin")],
 });

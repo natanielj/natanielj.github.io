@@ -10,7 +10,8 @@ import ISLC22 from "../assets/img/islc22.jpg";
 export default function AwardsPage() {
   return (
     <div className="mx-auto max-w-screen-md mb-2">
-      <Typography variant="h2">Awards</Typography>
+      <h2 className="text-4xl mb-2 dark:text-white">Awards</h2>
+
       <Carousel className="rounded-xl  h-96">
         <Slides
           img={SLC}
@@ -63,13 +64,9 @@ function Slides(props) {
       />
       <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
         <div className="w-3/4 text-center md:w-2/4">
-          <Typography
-            variant="h4"
-            color="white"
-            className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-          >
+          <h4 className="mb-4 text-3xl md:text-4xl lg:text-5xl text-white">
             {props.title}
-          </Typography>
+          </h4>
           <Typography
             variant="small"
             color="white"
