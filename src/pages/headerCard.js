@@ -4,16 +4,11 @@ import { MediaBar } from "../Components/mediaBar";
 //import { PageSpeedDial } from "../Components/SpeedDial.js";
 // import { EducationSection } from "../Sections/edu";
 
-function HeaderCard() {
+export default function HeaderCard() {
   return (
     <div className="mx-auto max-w-screen-md ">
       <div className="mx-auto max-w-screen-md pt-5">
-        <Carousel>
-          <img
-            src="https://media.licdn.com/dms/image/D5622AQHUQBLY6Raljw/feedshare-shrink_800/0/1686889902414?e=1703721600&v=beta&t=rNMFxgGqbcq5QhjYlgUK1pLQaq4ZtRZap2yzPVZaqwU"
-            alt="me receiving award of recognition from CNUSD"
-          />
-        </Carousel>
+        <Slider />
         <MediaBar />
         <h2 className="text-4xl mb-2 dark:text-white">About Me</h2>
         <h5 className="text-xl mb-2 dark:text-white">
@@ -31,4 +26,15 @@ function HeaderCard() {
   );
 }
 
-export default HeaderCard;
+function Slider() {
+  return (
+    <div>
+      <Carousel>
+        <img
+          src="https://media.licdn.com/dms/image/D5622AQHUQBLY6Raljw/feedshare-shrink_800/0/1686889902414?e=1703721600&v=beta&t=rNMFxgGqbcq5QhjYlgUK1pLQaq4ZtRZap2yzPVZaqwU"
+          alt="me receiving award of recognition from CNUSD"
+        />
+      </Carousel>
+    </div>
+  );
+}

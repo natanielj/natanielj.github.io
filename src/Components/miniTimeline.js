@@ -6,7 +6,6 @@ import {
   TimelineIcon,
   TimelineBody,
   Typography,
-  IconButton,
 } from "@material-tailwind/react";
 
 export default function miniTimeline() {

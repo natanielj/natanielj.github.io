@@ -2,6 +2,17 @@ import { ButtonGroup, Button, Tooltip } from "@material-tailwind/react";
 
 import Resume from "../assets/img/resume.pdf";
 
+function copyText() {
+  // Get the text field
+  copyText = "nataniel.jayaseelan@gmail.com";
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText);
+
+  // Alert the copied text
+  alert("Copied email to clipboard: " + copyText);
+}
+
 export function MediaBar() {
   return (
     <div className="flex w-max flex-col gap-4 py-7">
@@ -49,24 +60,22 @@ export function MediaBar() {
             </a>
           </Tooltip>
         </Button>
-        <Button>
+        <Button onClick={copyText}>
           <Tooltip
             content={
-              <div>
-                <p>My Email: nataniel.jayaseelan@gmail.com</p>
+              <div className="bg-green">
+                <p>Copy My Email!</p>
               </div>
             }
           >
-            <a onClick={copyText}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
-              </svg>
-            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
+            </svg>
           </Tooltip>
         </Button>
         <Button>
@@ -98,15 +107,4 @@ export function MediaBar() {
       </ButtonGroup>
     </div>
   );
-}
-
-function copyText() {
-  // Get the text field
-  copyText = "nataniel.jayaseelan@gmail.com";
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText);
-
-  // Alert the copied text
-  alert("Copied email to clipboard: " + copyText);
 }

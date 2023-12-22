@@ -1,12 +1,13 @@
-import { Switch, Typography } from "@material-tailwind/react";
+//Not being used but works
+
+import { Switch } from "@material-tailwind/react";
 
 // future update: get state of dark mode and update on site
 export default function DarkModeSwitch() {
   return (
     <div className="flex justify-start">
-      <Typography color="gray" className="font-normal text-gray-600 pr-2">
-        Dark Mode
-      </Typography>
+      <p className="text-black dark:text-white">Dark Mode: </p>
+
       <Switch
         id="darkModeSwitch"
         color="blue"
