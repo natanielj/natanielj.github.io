@@ -1,5 +1,11 @@
 import { Carousel } from "@material-tailwind/react";
 import { MediaBar } from "../Components/mediaBar";
+import CNUSDAwards from "../assets/img/cnusdAward.jpg";
+import methodist from "../assets/img/methodist.jpg";
+import SLC from "../assets/img/SLC23.jpg";
+import Nataniel from "../assets/img/nataniel.png";
+import BestStudent from "../assets/img/bestStu.jpg";
+import ISLC22 from "../assets/img/islc22.jpg";
 
 //import { PageSpeedDial } from "../Components/SpeedDial.js";
 // import { EducationSection } from "../Sections/edu";
@@ -31,9 +37,23 @@ function Slider() {
     <div>
       <Carousel>
         <img
-          src="https://media.licdn.com/dms/image/D5622AQHUQBLY6Raljw/feedshare-shrink_800/0/1686889902414?e=1703721600&v=beta&t=rNMFxgGqbcq5QhjYlgUK1pLQaq4ZtRZap2yzPVZaqwU"
+          src={CNUSDAwards}
           alt="me receiving award of recognition from CNUSD"
         />
+        <img src={methodist} alt="Student Volunteer of the Quarter award" />
+        <img
+          img={SLC}
+          alt="My team after receiving our awards at the FBLA State Leadership Conference 2023"
+        />
+        <img
+          img={BestStudent}
+          alt="Me and the principal of ERHS after I received the Most Exemplary Student of ERHS"
+        />
+        <img
+          img={ISLC22}
+          alt="Me after receiving our awards at the FBLA Inland Section Leadership Conference 2022"
+        />
+        <img img={Nataniel} alt="About me" />
       </Carousel>
     </div>
   );

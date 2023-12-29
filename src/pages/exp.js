@@ -35,6 +35,7 @@ export default function Experience() {
                 News, a student news organization for Arcadia High School. Check
                 out their website through the logo above!"
           />
+
           <Timelines
             website="https://www.rotary-ev.org/"
             img={rotaryLogo}
