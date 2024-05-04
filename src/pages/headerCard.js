@@ -2,13 +2,14 @@ import { Carousel } from "@material-tailwind/react";
 import { MediaBar } from "../Components/mediaBar";
 import CNUSDAwards from "../assets/img/cnusdAward.jpg";
 import methodist from "../assets/img/methodist.jpg";
-import SLC from "../assets/img/SLC23.jpg";
-import Nataniel from "../assets/img/nataniel.png";
+// import Nataniel from "../assets/img/nataniel.png";
 import BestStudent from "../assets/img/bestStu.jpg";
 import ISLC22 from "../assets/img/islc22.jpg";
 
 //import { PageSpeedDial } from "../Components/SpeedDial.js";
 // import { EducationSection } from "../Sections/edu";
+// const SLC = "https://github.com/Ironspidr/pubDB/blob/main/resume/assets/img/SLC23.jpg?raw=true";
+const Nataniel = "https://github.com/Ironspidr/pubDB/blob/main/resume/assets/img/nataniel.png?raw=true";
 
 export default function HeaderCard() {
   return (
@@ -40,9 +41,8 @@ function Slider() {
           src={CNUSDAwards}
           alt="me receiving award of recognition from CNUSD"
         />
-        <img src={methodist} alt="Student Volunteer of the Quarter award" />
         <img
-          img={SLC}
+          src="https://github.com/Ironspidr/pubDB/blob/main/resume/assets/img/SLC23.jpg?raw=true"
           alt="My team after receiving our awards at the FBLA State Leadership Conference 2023"
         />
         <img
@@ -53,7 +53,7 @@ function Slider() {
           img={ISLC22}
           alt="Me after receiving our awards at the FBLA Inland Section Leadership Conference 2022"
         />
-        <img img={Nataniel} alt="About me" />
+        <img src={Nataniel} alt="About me" />
       </Carousel>
     </div>
   );
