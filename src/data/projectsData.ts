@@ -2,51 +2,27 @@ import { Project } from '../types';
 
 export const projectsData: Project[] = [
   {
-    title: 'E-Commerce Dashboard',
-    description: 'A comprehensive dashboard for e-commerce businesses providing analytics, inventory management, and order processing capabilities.',
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'SlugView',
+    description: ' Developed a Web App using Three.js for the NASA SpaceApps Hackathon Orrery Web App Challenge, showcasing advanced 3D visualization skills',
+    image: 'https://images.pexels.com/photos/34521/space-shuttle-lift-off-liftoff-nasa.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     technologies: ['React', 'TypeScript', 'Redux', 'Node.js', 'MongoDB'],
     liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/natanielj/SlugView'
   },
   {
-    title: 'Travel Companion App',
-    description: 'A mobile-first web application that helps travelers plan their trips, find accommodations, and discover local attractions.',
-    image: 'https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['React Native', 'Firebase', 'Google Maps API', 'Styled Components'],
+    title: 'CodingTracker - CruzHacks',
+    description: 'Developed a web application for CruzHacks 2024, enabling users to track their coding progress and receive personalized feedback using React, Node.js, and MongoDB.',
+    image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    technologies: ['React Native', 'Mongo DB', 'Google Maps API'],
     liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/natanielj/CodingTracker'
   },
   {
-    title: 'Task Management Platform',
-    description: 'A collaborative task management tool for teams with real-time updates, task assignments, and progress tracking.',
-    image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS'],
+    title: 'ASL "Translator" - CNN Model',
+    description: 'Developed a CNN model to recognize American Sign Language (ASL) gestures using TensorFlow and OpenCV, achieving 90% accuracy on the validation set.',
+    image: 'https://images.pexels.com/photos/9017013/pexels-photo-9017013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    technologies: ['Python', 'TensorFlow', 'OpenCV', 'Machine Learning'],
     liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/natanielj/ASLDecoder-ML.git'
   },
-  {
-    title: 'Finance Tracker',
-    description: 'A personal finance application that helps users track expenses, create budgets, and visualize spending patterns.',
-    image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['Vue.js', 'Vuex', 'Chart.js', 'Firebase'],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    title: 'AI-Powered Content Generator',
-    description: 'A web tool that leverages AI to help users generate blog posts, social media content, and marketing copy.',
-    image: 'https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['React', 'Node.js', 'OpenAI API', 'MongoDB'],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    title: 'Real Estate Marketplace',
-    description: 'A platform connecting property buyers, sellers, and agents with advanced search capabilities and virtual tours.',
-    image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['React', 'Express', 'PostgreSQL', 'AWS S3'],
-    liveUrl: '#',
-    githubUrl: '#'
-  }
 ];

@@ -4,25 +4,12 @@ import { GraduationCap } from 'lucide-react';
 
 const educationData = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    duration: "2018 - 2020",
-    description: "Specialized in Artificial Intelligence and Machine Learning. Graduated with honors.",
+    degree: "Bachelor of Science in Computer Engineering",
+    institution: "University of California, Santa Cruz",
+    duration: "2023 - 2027(Expected)",
+    description: "Focus on Systems Programming",
     achievements: [
-      "Published research paper on Deep Learning",
-      "Teaching Assistant for Advanced Algorithms",
-      "President of Computer Science Society"
-    ]
-  },
-  {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "University of California, Berkeley",
-    duration: "2014 - 2018",
-    description: "Focus on Software Development and System Design. Dean's List all semesters.",
-    achievements: [
-      "Graduated Summa Cum Laude",
-      "Led development team for senior project",
-      "Received Outstanding Student Award"
+      "Crown College Scholars - Honors Program"
     ]
   }
 ];
