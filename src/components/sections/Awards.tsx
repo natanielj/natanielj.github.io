@@ -4,25 +4,23 @@ import { Award, ExternalLink } from 'lucide-react';
 
 const awardsData = [
   {
-    title: "Innovation Excellence Award",
-    organization: "Tech Leaders Summit 2023",
-    date: "December 2023",
-    description: "Recognized for developing an innovative AI-powered solution that revolutionized customer service automation.",
-    link: "#"
+    title: "2023 Website Design California FBLA State Champion",
+    organization: "California Future Business Leaders of America",
+    date: "March 2023",
+    description: "Won first place for designing and developing a website that showcases the best practices in web design and user experience.",
+    link: "https://www.apachenews.ausd.net/"
   },
   {
-    title: "Best Web Application",
-    organization: "Developer's Choice Awards",
-    date: "September 2023",
-    description: "Won first place for creating a highly scalable and accessible web application that serves millions of users.",
-    link: "#"
+    title: "Certificate of Special Congressional Recognition",
+    organization: "United States Congress",
+    date: "April 2023",
+    description: "Special congressional recognition of outstanding and invaluable service to the community",
   },
   {
-    title: "Outstanding Contribution",
-    organization: "Open Source Community",
-    date: "June 2023",
-    description: "Acknowledged for significant contributions to various open-source projects and mentoring new developers.",
-    link: "#"
+    title: "Exemplary Student Award",
+    organization: "California Legislature Assembly",
+    date: "April 2023",
+    description: "Acknowledged for significant contributions to the community and academic excellence.",
   }
 ];
 

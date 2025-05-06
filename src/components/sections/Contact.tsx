@@ -2,6 +2,11 @@ import { useState, useRef, useEffect, FormEvent } from 'react';
 import { Send, CheckCircle } from 'lucide-react';
 import { useInView } from '../../hooks/useInView';
 
+
+import emailjs from '@emailjs/browser';
+
+
+
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -37,6 +42,25 @@ const Contact = () => {
       }, 5000);
     }, 1500);
   };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('amrk8ck', '9cuu1l7', form.current, {
+        publicKey: 'RXG8u61aAhUAfGIm',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
 
   return (
     <section
@@ -123,7 +147,7 @@ const Contact = () => {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md">
+                <form onSubmit={sendEmail} className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md" ref={form}>
                   <div className="mb-6">
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       Your Name
@@ -145,6 +169,7 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
+                      name='email'
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
@@ -159,6 +184,7 @@ const Contact = () => {
                     <textarea
                       id="message"
                       rows={5}
+                      name='message'
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
@@ -168,6 +194,7 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
+                    value="Send"
                     disabled={loading}
                     className={`w-full flex items-center justify-center px-6 py-3 text-white font-medium rounded-lg transition-colors ${
                       loading

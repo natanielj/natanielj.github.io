@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
+ import { useEffect, useRef, useState } from 'react';
 import { useInView } from '../../hooks/useInView';
 import { FileText, Github, Linkedin, Mail } from 'lucide-react';
 
 const skills = [
-  { name: 'JavaScript', level: 90 },
-  { name: 'React', level: 85 },
-  { name: 'TypeScript', level: 80 },
-  { name: 'Node.js', level: 75 },
-  { name: 'HTML/CSS', level: 95 },
-  { name: 'UI/UX Design', level: 85 },
+  { name: 'React/Node.js', level: 90 },
+  { name: 'Typescript', level: 85 },
+  { name: 'Python', level: 80 },
+  { name: 'Machine Learning', level: 55 },
+  { name: 'Artificial Intelligence / Generative AI', level: 40 },
+  { name: 'Natural Language Processing', level: 30 },
 ];
 
 const About = () => {
@@ -52,15 +52,15 @@ const About = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-lg mb-6">
               <img
-                src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Professional headshot"
+                src="src/assets/acm-workshop.jpg"
+                alt="ACM Workshop"
                 className="w-full h-auto"
               />
             </div>
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/nataniel-jayaseelan-80977b223"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transition-colors flex items-center justify-center gap-2"
@@ -69,7 +69,7 @@ const About = () => {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/natanielj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 text-base font-medium rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2"
@@ -78,7 +78,7 @@ const About = () => {
                 GitHub
               </a>
               <a
-                href="/resume.pdf"
+                href="src/assets/SWEResume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 text-base font-medium rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2"
@@ -87,7 +87,7 @@ const About = () => {
                 Resume
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:nataniel.jayaseelan@gmail.com"
                 className="px-6 py-3 text-base font-medium rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2"
               >
                 <Mail size={18} />
