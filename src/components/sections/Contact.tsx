@@ -48,8 +48,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_amrk8ck', 'template_9cuu1l7', form.current, {
-        publicKey: 'RXG8u61aAhUAfGIm',
+      .sendForm('amrk8ck', '9cuu1l7', form.current, {
+        publicKey: '_RXG8u61aAhUAfGIm',
       })
       .then(
         () => {

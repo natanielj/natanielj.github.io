@@ -44,7 +44,7 @@ const Home = () => {
             Get in Touch
           </a>
           <a
-            href="/resume.pdf"
+            href="src/assets/SWEResume.pdf"
             className="w-full sm:w-auto px-8 py-3 text-lg font-medium rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2"
             download
           >
