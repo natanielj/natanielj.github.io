@@ -1,11 +1,8 @@
 import { useState, useRef, useEffect, FormEvent } from 'react';
 import { Send, CheckCircle } from 'lucide-react';
 import { useInView } from '../../hooks/useInView';
-
-
 import emailjs from '@emailjs/browser';
-
-
+// import dotenv from 'dotenv';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -13,7 +10,9 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   
+  const formRef = useRef<HTMLFormElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { threshold: 0.1 });
   const [animate, setAnimate] = useState(false);
@@ -24,45 +23,37 @@ const Contact = () => {
     }
   }, [isInView, animate]);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError('');
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      if (formRef.current) {
+        await emailjs.sendForm(
+          'service_amrk8ck', // Replace with your EmailJS service ID
+          'template_9cuu1l7', // Replace with your EmailJS template ID
+          formRef.current,
+          '_RXG8u61aAhUAfGIm' // Replace with your EmailJS public key
+        );
+        
+        setSubmitted(true);
+        setName('');
+        setEmail('');
+        setMessage('');
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 5000);
+      }
+    } catch (err) {
+      setError('Failed to send message. Please try again later.');
+      console.error('EmailJS Error:', err);
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-      setName('');
-      setEmail('');
-      setMessage('');
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
-    }, 1500);
+    }
   };
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('amrk8ck', '9cuu1l7', form.current, {
-        publicKey: '_RXG8u61aAhUAfGIm',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-
-      alert('Message sent successfully!');
-  };
-
 
   return (
     <section
@@ -104,7 +95,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Phone</h4>
-                    <p className="mt-1 text-gray-600 dark:text-gray-400">+1 (626) 360 8227</p>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
                   </div>
                 </div>
 
@@ -116,7 +107,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Email</h4>
-                    <p className="mt-1 text-gray-600 dark:text-gray-400">nataniel.jayaseelan@gmail.com</p>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">nathaniel@example.com</p>
                   </div>
                 </div>
 
@@ -149,7 +140,12 @@ const Contact = () => {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={sendEmail} className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md" ref={form}>
+                <form ref={formRef} onSubmit={handleSubmit} className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md">
+                  {error && (
+                    <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-red-300">
+                      {error}
+                    </div>
+                  )}
                   <div className="mb-6">
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       Your Name
@@ -157,6 +153,7 @@ const Contact = () => {
                     <input
                       type="text"
                       id="name"
+                      name="from_name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
@@ -171,7 +168,7 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
-                      name='email'
+                      name="from_email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
@@ -185,8 +182,8 @@ const Contact = () => {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={5}
-                      name='message'
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
@@ -196,7 +193,6 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    value="Send"
                     disabled={loading}
                     className={`w-full flex items-center justify-center px-6 py-3 text-white font-medium rounded-lg transition-colors ${
                       loading
