@@ -1,4 +1,4 @@
- import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useInView } from '../../hooks/useInView';
 import { FileText, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -52,7 +52,7 @@ const About = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-lg mb-6">
               <img
-                src="src/assets/acm-workshop.jpg"
+                src="https://lh3.google.com/u/0/d/1Ry5EiprfmYfRR9S-gVW-kdolf3Szdbkl=w1725-h992-iv1?auditContext=prefetch"
                 alt="ACM Workshop"
                 className="w-full h-auto"
               />
@@ -78,7 +78,7 @@ const About = () => {
                 GitHub
               </a>
               <a
-                href="src/assets/SWEResume.pdf"
+                href="https://drive.google.com/file/d/1gXJp29njWmBV4HKBeRlm7D-GRusiO5gA/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 text-base font-medium rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2"
