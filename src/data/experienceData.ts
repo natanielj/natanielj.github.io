@@ -2,6 +2,46 @@ import { Experience } from '../types';
 
 export const experienceData: Experience[] = [
   {
+    role: 'Digital Software Intern',
+    company: 'Kaiser Permanente – Hybrid',
+    type: 'Internship',
+    duration: 'Jun 2025 - Sep 2025',
+    description: 'Built Python automation and integrated observability tools (Dynatrace, Blue Triangle, F5, AKAMAI) to streamline system monitoring and improve service reliability across internal and external platforms.',
+    technologies: ['Python', 'Dynatrace', 'Blue Triangle', 'F5', 'AKAMAI']
+  },
+  {
+    role: 'Software Engineering Intern',
+    company: 'Overture Maps – Santa Cruz, CA',
+    type: 'Internship',
+    duration: 'Apr 2025 – Jun 2025',
+    description: 'Designed ML pipelines (CNNs, RNNs, ANNs) and delivered a working navigation demo that generated intelligent map outputs and improved accuracy, route prediction, and anomaly detection.',
+    technologies: ['ML Pipelines', 'CNNs', 'RNNs', 'ANNs', 'Navigation']
+  },
+  {
+    role: 'Student Web Technician',
+    company: 'Baskin Engineering, UCSC – Santa Cruz, CA',
+    type: 'Part-time',
+    duration: 'Apr 2024 – Present',
+    description: 'Maintained web systems serving 3,000+ users and reduced manual QA workload by 40% through Python automation and link validation scripting. Code: github.com/automation-scripts',
+    technologies: ['Python', 'Web Systems', 'QA Automation']
+  },
+  {
+    role: 'Lab Intern & Project Manager',
+    company: 'UCSC Artificial Intelligence Explainability Accountability (AIEA) – Santa Cruz, CA',
+    type: 'Research/Lab',
+    duration: 'Sep 2024 - Present',
+    description: 'Conducted research on autonomous driving by training and optimizing DQN/PPO reinforcement learning agents in the CARLA simulator using Stable Baselines and PyTorch, achieving a 20% increase in navigation reliability. Code: github.com/RL-sim',
+    technologies: ['DQN', 'PPO', 'Reinforcement Learning', 'CARLA', 'Stable Baselines', 'PyTorch']
+  },
+  {
+    role: 'Instruction & Projects Lead Officer',
+    company: 'UCSC Association for Computing Machinery (ACM) – Santa Cruz, CA',
+    type: 'Leadership/Volunteer',
+    duration: 'Jun 2024 - Present',
+    description: 'Directed technical curriculum and workshops for 100+ students, mentored project teams through full development cycles, and coordinated industry speaker events that increased member engagement by 40%.',
+    technologies: ['Technical Curriculum', 'Project Management', 'Mentorship']
+  },
+  {
     role: 'Student Web Technician',
     company: 'UCSC – Santa Cruz, CA',
     type: 'Part-time',
@@ -24,6 +64,14 @@ export const experienceData: Experience[] = [
     duration: 'Jan 2024 – Oct 2024',
     description: 'Managed website maintenance and updates for UCSC Office of Admissions, ensuring optimal functionality and user experience.',
     technologies: ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    role: 'Drone Pilot Training Program',
+    company: 'UCSC CITRIS Initiative for Drone Education and Research (CIDER) – Santa Cruz, CA',
+    type: 'Training/Project',
+    duration: 'Jan 2024 - May 2024',
+    description: 'Applied navigation principles to drone flight research, developing a photogrammetry pipeline for 3D reconstruction and contributing to SlugView, a NASA SpaceApps project visualizing real-time solar system data with Three.js. Code: github.com/SlugView',
+    technologies: ['Drone Navigation', 'Photogrammetry', '3D Reconstruction', 'Three.js']
   },
   {
     role: 'Lead Software Engineering Intern',

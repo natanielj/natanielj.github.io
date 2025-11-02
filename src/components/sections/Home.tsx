@@ -28,7 +28,7 @@ const Home = () => {
         </h1>
         
         <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-8">
-          Software Developer | Web Designer
+          Software Developer | Systems Engineer
         </h2>
         
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">

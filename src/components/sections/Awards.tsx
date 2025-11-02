@@ -1,8 +1,14 @@
 import { useRef, useState, useEffect } from 'react';
 import { useInView } from '../../hooks/useInView';
-import { Award, ExternalLink } from 'lucide-react';
+import { Award, ExternalLink, FileBadge } from 'lucide-react';
 
 const awardsData = [
+  {
+    title: "Intro to Technical Interview Prep 101",
+    organization: "Codepath",
+    date: "July 2025",
+    description: "Completed an accelerated 10-week course focusing on fundamental data structures, algorithms, and technical problem-solving. Mastered the UMPIRE method for breaking down complex algorithmic challenges and strengthened Big O analysis skills for coding interviews.",
+  },
   {
     title: "2023 Website Design California FBLA State Champion",
     organization: "California Future Business Leaders of America",
@@ -44,7 +50,7 @@ const Awards = () => {
       <div className="container mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Awards & Recognition
+            Awards, Recognitions, and Certifications
           </h2>
           <div className="h-1 w-20 bg-indigo-600 dark:bg-indigo-400 mx-auto"></div>
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">

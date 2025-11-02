@@ -1,6 +1,14 @@
 import { Project } from '../types';
 
 export const projectsData: Project[] = [
+    {
+    title: 'Baskin Engineering Student Ambassadors - Appointment Web App',
+    description: ' A booking application for managing Baskin Engineering Student Ambassador tours (TypeScript) — a full-stack practical app.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2HsrZwZmGETnwnY9WaIQxNzB8HYi_5iuxvg&s',
+    technologies: ['React', 'TypeScript', 'Redux', 'Node.js', 'Firebase'],
+    githubUrl: 'https://github.com/natanielj/BESABooking',
+    liveUrl: 'https://besa-booking.nj-web.com/'
+  },
   {
     title: 'SlugView',
     description: ' Developed a Web App using Three.js for the NASA SpaceApps Hackathon Orrery Web App Challenge, showcasing advanced 3D visualization skills',
